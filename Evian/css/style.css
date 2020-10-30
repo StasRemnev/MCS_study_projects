@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 auto;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    font-size: 50px;
+    position: fixed;
+    width: 1440px;
+    height: 140px;   
+}
+
+.header-logo {
+    text-decoration: none;
+    color: #E50043;
+}
+
+.site-navigation a {
+    text-decoration: none;
+    padding-left: 25px;
+    color: #E50043;        
+}
+
+.site-navigation li {
+    display: inline;
+}
+
+.image-container {
+    height: 950px;
+    display: flex;
+    background-image: url(../img/evian_origins_logo.jpg);
+}
+
+.image-container h1 {
+    margin: auto;
+    font-size: 100px;
+    color: #E50043;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+
+/* ============================================================================ */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin: 150px 0;
+    
+}
+
+.about-water {
+    width: 1040px;
+    height: 280px;
+    border: 3px solid #F8BFC7;
+    border-radius: 20px;
+    margin: auto;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 5%; 
+    padding: 24px;
+
+}
+
+.about-water h2 {
+    margin-bottom: 18px;
+    font: inherit;
+}
+
+.water {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px 200px; 
+}
+
+.water p {
+    text-align: center;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.name-water {
+    padding-top: 48px;
+}
+
+
+.about-water.two {
+    display: flex;
+}
+
+.about-water__text {
+    font-size: 25px;
+    line-height: 29px;
+    /* padding: 10px; */
+}
+
+.about-water li {
+    list-style-type: none;
+}
+
+.about-water ul {
+    padding: 25px 0;
+}
+
+.about-water__img {
+    margin: 0 82px;
+}
+
+
+/* footer */
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+    color: #FFFFFF;
+    padding: 50px;
+    font-size: 50px;
+    text-transform: lowercase;
+    background-color: #F8BFC7;
+}
+
+.footer-container a {
+    text-decoration: inherit;
+    color: inherit;
+}

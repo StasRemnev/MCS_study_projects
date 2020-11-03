@@ -1,0 +1,117 @@
+@import url(reset.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.header {
+    background-color: #FEB700;
+    height: 160px;
+    padding: 52px;    
+}
+
+.header h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.columns {
+    max-width: 1440px;
+    margin: auto;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+.column {
+    width: calc((100% - 100px)/3);
+    border: 1px solid #000000;  
+    
+}
+
+.image {
+    background-image: url(../img/Samosa\ Sweet\ Potatoes\ Wraps\ with\ Tofu\ Scramble.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    padding-bottom: 150%;   
+} 
+
+.image-1 {
+   background-image: url(../img/Frozen\ Yogurt\ Breakfast\ Bars.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 150%;
+}
+
+.image-2 {
+   background-image: url(../img/Healthiest\ Ever\ Granola.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 150%;
+
+}
+.column h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 10px;
+}
+
+.column-text p, ul, li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.column-text{
+    padding: 30px 33px;
+    
+}
+
+.column-text p {
+    padding-bottom: 15px;
+}
+
+.column-text ul:not(:last-child) {
+    padding-bottom: 15px;
+}
+
+
+/* footer */
+.footer {
+    background-color: #FEB700;
+}
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+    padding: 70px;
+    font-size: 50px;
+    text-transform: uppercase;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.footer-container a {
+    text-decoration: inherit;
+    color: inherit;
+}
+

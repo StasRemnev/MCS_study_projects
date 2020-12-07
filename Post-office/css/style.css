@@ -6,16 +6,26 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: #F8BFC7;
+    --form-text-color: #fff;
+    --primary-font: Helvetica, sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
 body {
-    width: 1440px;
-    margin: 0 auto;
-    font-family: Helvetica, sans-serif;
+    font-family: var(--primary-font);
 }
 
 .page {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
     height: 100vh;
     background-color: #336FD1;
 }
@@ -25,12 +35,12 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 50px;
-    font-size: 20px;
+    font-size: 2rem;
     text-transform: uppercase;
     position: fixed;
-    width: 1440px;
+    width: 100%;
     height: 90px;
-    background-color:#F8BFC7;
+    background-color: var(--main-color);
 }
 
 .header a {
@@ -40,7 +50,7 @@ body {
 }
 
 .header a:hover {
-    color: white;
+    color: #fff;
 }
 
 .site-navigation li {
@@ -49,17 +59,20 @@ body {
 /* ============================================================================ */
 
 .content {
+    margin-top: 100px;
+    height: 65vh;
+    width: 100%;
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
-    height: 60vh;
-    margin-top: 100px;
+    background-size: cover;
+    background-position: center;
 }
 
 .personal {
-    background-color: #F8BFC7;
+    background-color: var(--main-color);
     width: 300px;
     height: 362px;
-    border: 3px solid #fff;
+    border: 3px solid var(--main-text-color);
     border-radius: 20px;
     padding: 33px 30px;
 }
@@ -71,13 +84,13 @@ input {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 2rem;
+    line-height: 2.3rem;
     padding: 10px 0 5px;
     border: none;
     border-bottom: 2px solid #fff;
     background: none;
-    color: white;
+    color: var(--form-text-color);
     margin-bottom: 16px;
 }
 
@@ -87,26 +100,26 @@ input:focus {
 
 /* Стилизация цвета текста внутри полей */
 input::-moz-placeholder {
-    color: #fff;
+    color: var(--form-text-color);
 }
 input::-webkit-input-placeholder {
-    color: white;
+    color: var(--form-text-color);
 }
-/* ---------------------------------------------------------------------------- */
+
 
 .personal label {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 23px;
-    color: white;
+    line-height: 2.3rem;
+    color: var(--form-text-color);
 }
 
 input[type="submit"] {
     background-color: #FEB700;
     font-family: inherit;
-    font-size 20px;
+    font-size: 2rem;
     text-transform: uppercase;
-    color: white;
+    color: #fff;;
 
     width: 200px;
     height: 60px;
@@ -128,8 +141,9 @@ input[type="submit"] {
     color: #FEB700;
     text-align: center;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: bold;
+    margin-top: 2rem;
 }
 
 /* footer */
@@ -140,9 +154,9 @@ input[type="submit"] {
     height: 90px;
     color: #FFFFFF;
     padding: 50px;
-    font-size: 20px;
+    font-size: 2rem;
     text-transform: uppercase;
-    background-color: #F8BFC7;
+    background-color: var(--main-color);
 }
 
 .footer-container a {

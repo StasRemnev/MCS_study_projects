@@ -1,169 +1,169 @@
 @import url(reset.css);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 :root {
-    --main-color: #F8BFC7;
-    --form-text-color: #fff;
-    --primary-font: Helvetica, sans-serif;
+   --main-color: #f8bfc7;
+   --form-text-color: #fff;
+   --naw-text-color: #336fd1;
+   --primary-font: Helvetica, sans-serif;
 }
 
 html {
-    font-size: 10px;
+   font-size: 10px;
 }
 
 body {
-    font-family: var(--primary-font);
+   font-family: var(--primary-font);
 }
 
 .page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    background-color: #336FD1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 0 auto;
+   width: 100%;
+   min-height: 100vh;
+   background-color: #336fd1;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    font-size: 2rem;
-    text-transform: uppercase;
-    position: fixed;
-    width: 100%;
-    height: 90px;
-    background-color: var(--main-color);
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 1000;
+   padding: 5rem;
+   font-size: 2rem;
+   text-transform: uppercase;
+   width: 100%;
+   height: 9rem;
+   background-color: var(--main-color);
 }
 
 .header a {
-    text-decoration: none;
-    padding-left: 25px;
-    color: black;
+   text-decoration: none;
+   padding-left: 2.5rem;
+   color: var(--naw-text-color);
 }
 
 .header a:hover {
-    color: #fff;
+   color: #fff;
 }
 
 .site-navigation li {
-    display: inline;
+   display: inline;
 }
-/* ============================================================================ */
 
 .content {
-    margin-top: 100px;
-    height: 65vh;
-    width: 100%;
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+   margin-top: 10rem;
+   min-height: 65vh;
+   width: 100%;
+   background-image: url(../img/background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
 }
 
 .personal {
-    background-color: var(--main-color);
-    width: 300px;
-    height: 362px;
-    border: 3px solid var(--main-text-color);
-    border-radius: 20px;
-    padding: 33px 30px;
+   background-color: var(--main-color);
+   width: 30rem;
+   height: 36.2rem;
+   border: 0.3rem solid var(--main-text-color);
+   border-radius: 2rem;
+   padding: 3.3rem 3rem;
 }
 
 input {
-    box-sizing: border-box;
-    display: block;
-    width: 240px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-    line-height: 2.3rem;
-    padding: 10px 0 5px;
-    border: none;
-    border-bottom: 2px solid #fff;
-    background: none;
-    color: var(--form-text-color);
-    margin-bottom: 16px;
+   box-sizing: border-box;
+   display: block;
+   width: 24rem;
+   font-family: "Times New Roman", Times, serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 2rem;
+   line-height: 2.3rem;
+   padding: 1rem 0 0.5rem;
+   border: none;
+   border-bottom: 0.2rem solid #fff;
+   background: none;
+   color: var(--form-text-color);
+   margin-bottom: 1.6rem;
 }
 
 input:focus {
-    outline: none;
+   outline: none;
 }
 
 /* Стилизация цвета текста внутри полей */
 input::-moz-placeholder {
-    color: var(--form-text-color);
+   color: var(--form-text-color);
 }
 input::-webkit-input-placeholder {
-    color: var(--form-text-color);
+   color: var(--form-text-color);
 }
 
-
 .personal label {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.3rem;
-    color: var(--form-text-color);
+   font-size: 2rem;
+   font-weight: 700;
+   line-height: 2.3rem;
+   color: var(--form-text-color);
 }
 
 input[type="submit"] {
-    background-color: #FEB700;
-    font-family: inherit;
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: #fff;;
+   background-color: #feb700;
+   font-family: inherit;
+   font-size: 2rem;
+   text-transform: uppercase;
+   color: #fff;
 
-    width: 200px;
-    height: 60px;
+   width: 20rem;
+   height: 6rem;
 
-    border: 3px solid #fff;
-    border-radius: 30px;
-    cursor: pointer;
-    margin: 10px auto;
+   border: 0.3rem solid #fff;
+   border-radius: 3rem;
+   cursor: pointer;
+   margin: 1rem auto;
 }
 
 .form {
-    position: relative;
-    top: 90px;
-    left: 90px;
-    width: 300px;
+   position: relative;
+   top: 9rem;
+   left: 9rem;
+   width: 30rem;
 }
 
 .title h1 {
-    color: #FEB700;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 5rem;
-    font-weight: bold;
-    margin-top: 2rem;
+   color: #feb700;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 5rem;
+   font-weight: bold;
+   margin-top: 2rem;
 }
 
 /* footer */
 .footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 90px;
-    color: #FFFFFF;
-    padding: 50px;
-    font-size: 2rem;
-    text-transform: uppercase;
-    background-color: var(--main-color);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 9rem;
+   color: #ffffff;
+   padding: 5rem;
+   font-size: 2rem;
+   text-transform: uppercase;
+   background-color: var(--main-color);
 }
 
 .footer-container a {
-    text-decoration: inherit;
-    color: inherit;
+   text-decoration: inherit;
+   color: inherit;
 }
 
 .footer-container a:hover {
-    color: black;
+   color: var(--naw-text-color);
 }
